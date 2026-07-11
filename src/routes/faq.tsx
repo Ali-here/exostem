@@ -8,9 +8,9 @@ import { PageHero } from "@/components/site/PageHero";
 export const Route = createFileRoute("/faq")({
   head: () => ({
     meta: [
-      { title: "FAQ — Luminara Stem Cell Therapy" },
+      { title: "FAQ — Exostem Stem Cell Therapy" },
       { name: "description", content: "Answers to frequent questions about stem cell therapy, eligibility, safety, cost and outcomes." },
-      { property: "og:title", content: "Frequently Asked Questions — Luminara" },
+      { property: "og:title", content: "Frequently Asked Questions — Exostem" },
       { property: "og:description", content: "Common questions about stem cell therapy, answered clearly." },
     ],
   }),

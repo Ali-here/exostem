@@ -8,9 +8,9 @@ import heroCells from "@/assets/hero-cells.jpg";
 export const Route = createFileRoute("/stem-cells")({
   head: () => ({
     meta: [
-      { title: "Stem Cells Explained — Luminara" },
+      { title: "Stem Cells Explained — Exostem" },
       { name: "description", content: "What stem cells are, how they work, and the sources we use in regenerative medicine." },
-      { property: "og:title", content: "Stem Cells Explained — Luminara" },
+      { property: "og:title", content: "Stem Cells Explained — Exostem" },
       { property: "og:description", content: "The biology behind regenerative medicine, explained clearly." },
       { property: "og:image", content: "/favicon.ico" },
     ],
@@ -48,7 +48,7 @@ function StemCells() {
               to repair themselves. In degenerative disease, that signaling breaks down. Regenerative therapy restores it.
             </p>
             <p className="text-slate-600 leading-relaxed">
-              At Luminara, we characterize every batch before administration to ensure viability, potency and safety.
+              At Exostem, we characterize every batch before administration to ensure viability, potency and safety.
             </p>
           </div>
         </div>

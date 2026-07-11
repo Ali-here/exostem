@@ -12,12 +12,12 @@ export const Route = createFileRoute("/conditions/$slug")({
   },
   head: ({ loaderData }) => {
     if (!loaderData) {
-      return { meta: [{ title: "Condition not found — Luminara" }, { name: "robots", content: "noindex" }] };
+      return { meta: [{ title: "Condition not found — Exostem" }, { name: "robots", content: "noindex" }] };
     }
     const { condition } = loaderData;
     return {
       meta: [
-        { title: `${condition.name} — Stem Cell Therapy | Luminara` },
+        { title: `${condition.name} — Stem Cell Therapy | Exostem` },
         { name: "description", content: condition.summary },
         { property: "og:title", content: `${condition.name} — Stem Cell Therapy` },
         { property: "og:description", content: condition.summary },

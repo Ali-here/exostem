@@ -7,9 +7,9 @@ import { PageHero } from "@/components/site/PageHero";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Luminara Stem Cell Therapy" },
+      { title: "Contact — Exostem Stem Cell Therapy" },
       { name: "description", content: "Book a consultation with our regenerative medicine specialists. Concierge care for international patients." },
-      { property: "og:title", content: "Contact Luminara" },
+      { property: "og:title", content: "Contact Exostem" },
       { property: "og:description", content: "Book a consultation with our regenerative medicine specialists." },
     ],
   }),
@@ -19,7 +19,7 @@ export const Route = createFileRoute("/contact")({
 const details = [
   { Icon: MapPin, label: "Main Laboratory", value: "Zurich, Switzerland" },
   { Icon: Phone, label: "Medical Inquiries", value: "+41 (0) 44 200 1200" },
-  { Icon: Mail, label: "Email", value: "care@luminaramed.com" },
+  { Icon: Mail, label: "Email", value: "care@Exostemmed.com" },
   { Icon: Clock, label: "Response Time", value: "Within 4 hours" },
 ];
 

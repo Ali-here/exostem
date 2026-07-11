@@ -8,9 +8,9 @@ import { conditionCategories, conditionsByCategory } from "@/lib/conditions";
 export const Route = createFileRoute("/conditions/")({
   head: () => ({
     meta: [
-      { title: "Conditions We Treat — Luminara" },
+      { title: "Conditions We Treat — Exostem" },
       { name: "description", content: "Stem cell therapy protocols across pediatric neurology, neurology, orthopedics, anti-aging, reproductive health and eye diseases." },
-      { property: "og:title", content: "Conditions We Treat — Luminara" },
+      { property: "og:title", content: "Conditions We Treat — Exostem" },
       { property: "og:description", content: "Regenerative protocols for 18+ conditions across six clinical disciplines." },
     ],
   }),

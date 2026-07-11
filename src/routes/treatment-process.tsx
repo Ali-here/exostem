@@ -7,9 +7,9 @@ import { PageHero } from "@/components/site/PageHero";
 export const Route = createFileRoute("/treatment-process")({
   head: () => ({
     meta: [
-      { title: "Treatment Process — Luminara Stem Cell Therapy" },
-      { name: "description", content: "How stem cell therapy works at Luminara — from initial consultation to long-term recovery monitoring." },
-      { property: "og:title", content: "Treatment Process — Luminara" },
+      { title: "Treatment Process — Exostem Stem Cell Therapy" },
+      { name: "description", content: "How stem cell therapy works at Exostem — from initial consultation to long-term recovery monitoring." },
+      { property: "og:title", content: "Treatment Process — Exostem" },
       { property: "og:description", content: "A clear, clinical path from first contact to long-term recovery." },
     ],
   }),

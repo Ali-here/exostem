@@ -7,9 +7,9 @@ import { PageHero } from "@/components/site/PageHero";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Stem Cell Therapy — Luminara" },
-      { name: "description", content: "Learn how Luminara's regenerative medicine practice combines cellular science, clinical rigor and personalized care." },
-      { property: "og:title", content: "About Stem Cell Therapy — Luminara" },
+      { title: "About Stem Cell Therapy — Exostem" },
+      { name: "description", content: "Learn how Exostem's regenerative medicine practice combines cellular science, clinical rigor and personalized care." },
+      { property: "og:title", content: "About Stem Cell Therapy — Exostem" },
       { property: "og:description", content: "Cellular science and clinical rigor for regenerative medicine." },
     ],
   }),
@@ -37,7 +37,7 @@ function About() {
       <PageHero
         eyebrow="About"
         title={<>Regenerative medicine, <span className="text-brand">reimagined for real lives.</span></>}
-        description="Luminara was founded on a simple premise: the body already knows how to heal. Our job is to give it the right cellular signals — and the right clinical environment — to do so at scale."
+        description="Exostem was founded on a simple premise: the body already knows how to heal. Our job is to give it the right cellular signals — and the right clinical environment — to do so at scale."
       />
 
       <section className="py-24 bg-white">

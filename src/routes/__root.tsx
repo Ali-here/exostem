@@ -77,14 +77,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Luminara — Stem Cell Therapy for Regenerative Medicine" },
+      { title: "Exostem — Stem Cell Therapy for Regenerative Medicine" },
       {
         name: "description",
         content:
           "Advanced stem cell therapy for neurology, orthopedics, anti-aging, reproductive health and eye diseases. Certified specialists, modern laboratory, personalized protocols.",
       },
-      { name: "author", content: "Luminara Regenerative Medicine" },
-      { property: "og:title", content: "Luminara — Stem Cell Therapy for Regenerative Medicine" },
+      { name: "author", content: "Exostem Regenerative Medicine" },
+      { property: "og:title", content: "Exostem — Stem Cell Therapy for Regenerative Medicine" },
       {
         property: "og:description",
         content:

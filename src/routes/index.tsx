@@ -254,7 +254,7 @@ function SuccessStory() {
           <div className="lg:w-1/2 p-12 lg:p-20 flex flex-col justify-center">
             <div className="text-brand font-heading text-6xl leading-none mb-6">&ldquo;</div>
             <p className="text-2xl font-medium mb-8 leading-relaxed text-brand-dark">
-              After years of struggling with chronic arthritis, the regenerative therapy at Luminara changed everything. I'm back to running morning miles without pain.
+              After years of struggling with chronic arthritis, the regenerative therapy at Exostem changed everything. I'm back to running morning miles without pain.
             </p>
             <div>
               <div className="font-bold text-lg">Michael Henderson</div>
@@ -356,7 +356,7 @@ function Contact() {
               <div className="space-y-3 text-sm text-white/80">
                 <div>Main Laboratory · Zurich, Switzerland</div>
                 <div>Medical Inquiries · +41 (0) 44 200 1200</div>
-                <div>Email · care@luminaramed.com</div>
+                <div>Email · care@Exostem.com</div>
               </div>
             </div>
             <form onSubmit={(e) => e.preventDefault()} className="flex flex-col gap-3 bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10">

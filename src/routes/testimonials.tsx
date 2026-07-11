@@ -8,9 +8,9 @@ import patientPortrait from "@/assets/patient-portrait.jpg";
 export const Route = createFileRoute("/testimonials")({
   head: () => ({
     meta: [
-      { title: "Success Stories — Luminara Stem Cell Therapy" },
-      { name: "description", content: "Real patients share the outcomes of their stem cell treatment journey at Luminara." },
-      { property: "og:title", content: "Patient Success Stories — Luminara" },
+      { title: "Success Stories — Exostem Stem Cell Therapy" },
+      { name: "description", content: "Real patients share the outcomes of their stem cell treatment journey at Exostem." },
+      { property: "og:title", content: "Patient Success Stories — Exostem" },
       { property: "og:description", content: "Outcomes from patients treated across neurology, orthopedics and beyond." },
     ],
   }),
@@ -18,11 +18,11 @@ export const Route = createFileRoute("/testimonials")({
 });
 
 const stories = [
-  { name: "Michael Henderson", role: "Orthopedic Patient · 2023", condition: "Arthritis", quote: "After years of struggling with chronic arthritis, the regenerative therapy at Luminara changed everything. I'm back to running morning miles without pain." },
+  { name: "Michael Henderson", role: "Orthopedic Patient · 2023", condition: "Arthritis", quote: "After years of struggling with chronic arthritis, the regenerative therapy at Exostem changed everything. I'm back to running morning miles without pain." },
   { name: "Sarah Chen", role: "Neurology Patient · 2024", condition: "Multiple Sclerosis", quote: "My relapses have dropped dramatically. Six months after treatment, I finally feel like I have my life back on my own terms." },
   { name: "The Alvarez Family", role: "Pediatric Neurology · 2024", condition: "Autism", quote: "Our son started making eye contact and forming full sentences within four months. Words we'd waited seven years to hear." },
   { name: "David Okafor", role: "Longevity Patient · 2023", condition: "Longevity", quote: "It's the most positive change I've made in a decade of health optimization. Energy, cognition, recovery — all measurably better." },
-  { name: "Elena Rossi", role: "Reproductive Health · 2024", condition: "Female Infertility", quote: "After three failed IVF cycles, Luminara's protocol changed the outcome. Our daughter is nine months old." },
+  { name: "Elena Rossi", role: "Reproductive Health · 2024", condition: "Female Infertility", quote: "After three failed IVF cycles, Exostem's protocol changed the outcome. Our daughter is nine months old." },
   { name: "James Whitaker", role: "Eye Diseases · 2023", condition: "Glaucoma", quote: "My visual field has held steady for the first time in years. The team was rigorous, kind and utterly professional." },
 ];
 
