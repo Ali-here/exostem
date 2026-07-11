@@ -89,7 +89,7 @@ function ConditionDetail() {
           <div>
             <p className="text-xs font-bold uppercase tracking-widest text-brand mb-3">Expected Benefits</p>
             <ul className="space-y-3">
-              {condition.benefits.map((b) => (
+              {condition.benefits.map((b: string) => (
                 <li key={b} className="flex items-start gap-3">
                   <span className="mt-0.5 shrink-0 size-6 rounded-full bg-brand/10 text-brand flex items-center justify-center">
                     <Check className="size-3.5" />
