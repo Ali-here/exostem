@@ -9,38 +9,204 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as TreatmentProcessRouteImport } from './routes/treatment-process'
+import { Route as TestimonialsRouteImport } from './routes/testimonials'
+import { Route as StemCellsRouteImport } from './routes/stem-cells'
+import { Route as FaqRouteImport } from './routes/faq'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as ConditionsRouteImport } from './routes/conditions'
+import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ConditionsIndexRouteImport } from './routes/conditions.index'
+import { Route as ConditionsSlugRouteImport } from './routes/conditions.$slug'
 
+const TreatmentProcessRoute = TreatmentProcessRouteImport.update({
+  id: '/treatment-process',
+  path: '/treatment-process',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TestimonialsRoute = TestimonialsRouteImport.update({
+  id: '/testimonials',
+  path: '/testimonials',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const StemCellsRoute = StemCellsRouteImport.update({
+  id: '/stem-cells',
+  path: '/stem-cells',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FaqRoute = FaqRouteImport.update({
+  id: '/faq',
+  path: '/faq',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ConditionsRoute = ConditionsRouteImport.update({
+  id: '/conditions',
+  path: '/conditions',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ConditionsIndexRoute = ConditionsIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => ConditionsRoute,
+} as any)
+const ConditionsSlugRoute = ConditionsSlugRouteImport.update({
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => ConditionsRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/conditions': typeof ConditionsRouteWithChildren
+  '/contact': typeof ContactRoute
+  '/faq': typeof FaqRoute
+  '/stem-cells': typeof StemCellsRoute
+  '/testimonials': typeof TestimonialsRoute
+  '/treatment-process': typeof TreatmentProcessRoute
+  '/conditions/$slug': typeof ConditionsSlugRoute
+  '/conditions/': typeof ConditionsIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/contact': typeof ContactRoute
+  '/faq': typeof FaqRoute
+  '/stem-cells': typeof StemCellsRoute
+  '/testimonials': typeof TestimonialsRoute
+  '/treatment-process': typeof TreatmentProcessRoute
+  '/conditions/$slug': typeof ConditionsSlugRoute
+  '/conditions': typeof ConditionsIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/conditions': typeof ConditionsRouteWithChildren
+  '/contact': typeof ContactRoute
+  '/faq': typeof FaqRoute
+  '/stem-cells': typeof StemCellsRoute
+  '/testimonials': typeof TestimonialsRoute
+  '/treatment-process': typeof TreatmentProcessRoute
+  '/conditions/$slug': typeof ConditionsSlugRoute
+  '/conditions/': typeof ConditionsIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/conditions'
+    | '/contact'
+    | '/faq'
+    | '/stem-cells'
+    | '/testimonials'
+    | '/treatment-process'
+    | '/conditions/$slug'
+    | '/conditions/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/about'
+    | '/contact'
+    | '/faq'
+    | '/stem-cells'
+    | '/testimonials'
+    | '/treatment-process'
+    | '/conditions/$slug'
+    | '/conditions'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/conditions'
+    | '/contact'
+    | '/faq'
+    | '/stem-cells'
+    | '/testimonials'
+    | '/treatment-process'
+    | '/conditions/$slug'
+    | '/conditions/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  ConditionsRoute: typeof ConditionsRouteWithChildren
+  ContactRoute: typeof ContactRoute
+  FaqRoute: typeof FaqRoute
+  StemCellsRoute: typeof StemCellsRoute
+  TestimonialsRoute: typeof TestimonialsRoute
+  TreatmentProcessRoute: typeof TreatmentProcessRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/treatment-process': {
+      id: '/treatment-process'
+      path: '/treatment-process'
+      fullPath: '/treatment-process'
+      preLoaderRoute: typeof TreatmentProcessRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/testimonials': {
+      id: '/testimonials'
+      path: '/testimonials'
+      fullPath: '/testimonials'
+      preLoaderRoute: typeof TestimonialsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/stem-cells': {
+      id: '/stem-cells'
+      path: '/stem-cells'
+      fullPath: '/stem-cells'
+      preLoaderRoute: typeof StemCellsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/faq': {
+      id: '/faq'
+      path: '/faq'
+      fullPath: '/faq'
+      preLoaderRoute: typeof FaqRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/conditions': {
+      id: '/conditions'
+      path: '/conditions'
+      fullPath: '/conditions'
+      preLoaderRoute: typeof ConditionsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -48,11 +214,46 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/conditions/': {
+      id: '/conditions/'
+      path: '/'
+      fullPath: '/conditions/'
+      preLoaderRoute: typeof ConditionsIndexRouteImport
+      parentRoute: typeof ConditionsRoute
+    }
+    '/conditions/$slug': {
+      id: '/conditions/$slug'
+      path: '/$slug'
+      fullPath: '/conditions/$slug'
+      preLoaderRoute: typeof ConditionsSlugRouteImport
+      parentRoute: typeof ConditionsRoute
+    }
   }
 }
 
+interface ConditionsRouteChildren {
+  ConditionsSlugRoute: typeof ConditionsSlugRoute
+  ConditionsIndexRoute: typeof ConditionsIndexRoute
+}
+
+const ConditionsRouteChildren: ConditionsRouteChildren = {
+  ConditionsSlugRoute: ConditionsSlugRoute,
+  ConditionsIndexRoute: ConditionsIndexRoute,
+}
+
+const ConditionsRouteWithChildren = ConditionsRoute._addFileChildren(
+  ConditionsRouteChildren,
+)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  ConditionsRoute: ConditionsRouteWithChildren,
+  ContactRoute: ContactRoute,
+  FaqRoute: FaqRoute,
+  StemCellsRoute: StemCellsRoute,
+  TestimonialsRoute: TestimonialsRoute,
+  TreatmentProcessRoute: TreatmentProcessRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
