@@ -5,7 +5,7 @@ export function SiteFooter() {
     <footer className="bg-brand-dark text-white pt-16 pb-10">
       <div className="max-w-7xl mx-auto px-6 grid gap-12 lg:grid-cols-4">
         <div className="lg:col-span-2 max-w-sm">
-          <div className="text-2xl font-heading font-bold text-brand mb-4 uppercase">Luminara</div>
+          <div className="text-2xl font-heading font-bold text-brand mb-4 uppercase">Exostem</div>
           <p className="text-white/60 text-sm leading-relaxed">
             Advanced regenerative medicine — certified specialists, modern laboratory, personalized
             protocols for patients from around the world.
@@ -30,7 +30,7 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="max-w-7xl mx-auto px-6 mt-14 pt-6 border-t border-white/10 flex flex-col md:flex-row justify-between gap-4 text-xs text-white/40">
-        <div>© {new Date().getFullYear()} Luminara Regenerative Medicine. All rights reserved.</div>
+        <div>© {new Date().getFullYear()} Exostem. All rights reserved.</div>
         <div className="flex gap-6">
           <a href="#" className="hover:text-brand transition-colors">Privacy Policy</a>
           <a href="#" className="hover:text-brand transition-colors">Ethics Board</a>

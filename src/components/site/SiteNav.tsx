@@ -67,7 +67,7 @@ export function SiteNav() {
     <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-brand/10">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         <Link to="/" className="text-2xl font-bold tracking-tight font-heading text-brand">
-          LUMINARA<span className="text-brand-dark">MED</span>
+          Exostem
         </Link>
 
         <div className="hidden lg:flex items-center gap-7 text-sm font-medium">
