@@ -47,20 +47,138 @@ export const conditionCategories = [
 ] as const;
 
 export const conditions: Condition[] = [
+
+  // Autism start
   {
-    slug: "autism",
-    name: "Autism",
-    category: "pediatric-neurology",
-    summary: "Improving communication, focus and behavior in children on the spectrum.",
-    overview:
-      "Mesenchymal stem cells modulate neuroinflammation and enhance blood flow to affected brain regions, supporting measurable improvements in cognition, communication and social engagement in children with autism spectrum disorder.",
-    benefits: [
-      "Reduction of neuroinflammation",
-      "Improved social interaction",
-      "Better sleep and behavioral regulation",
-      "Support for speech and language progress",
-    ],
-  },
+  slug: "autism",
+
+  name: "Stem Cell Therapy for Children with Autism: Benefits, Safety, Cost, and Expected Outcomes",
+
+  category: "pediatric-neurology",
+
+  readTime: "15 min read",
+
+  updatedAt: "17 June 2026",
+
+  summary:
+    "Stem cell therapy is being explored as a supportive treatment for children with Autism Spectrum Disorder (ASD). While it is not a cure, research suggests it may help improve communication, attention, behavior, sleep, and overall daily functioning when combined with conventional therapies.",
+
+  overview:
+    "Stem cell therapy has gained growing attention as a complementary approach for children with Autism Spectrum Disorder (ASD). Researchers are investigating whether mesenchymal stromal cells (MSCs) can help regulate inflammation, support immune balance, and improve cellular communication within the nervous system. Although stem cell therapy does not cure autism, it may enhance the body's natural healing processes and improve the effectiveness of behavioral, speech, and occupational therapies.",
+
+  benefits: [
+    "May reduce neuroinflammation",
+    "Supports healthy immune regulation",
+    "Improves communication and social interaction",
+    "Enhances attention and focus",
+    "Supports speech and language development",
+    "Better emotional and behavioral regulation",
+    "Improves sleep quality",
+    "May reduce sensory sensitivities",
+    "Supports digestive health",
+    "Helps children participate more effectively in conventional therapies"
+  ],
+
+  sections: [
+    {
+      title: "Understanding Stem Cell Therapy for Autism",
+      content:
+        "Autism Spectrum Disorder (ASD) is a developmental condition that affects communication, social interaction, learning, and behavior. Early symptoms often appear during infancy or early childhood and may include delayed speech, reduced eye contact, repetitive behaviors, and difficulty adapting to changes in routine. Recent research suggests that immune imbalance, inflammation, oxidative stress, and altered cellular communication may contribute to the condition. Stem cell therapy is being investigated as a supportive treatment that complements traditional therapies rather than replacing them."
+    },
+
+    {
+      title: "How Stem Cell Therapy Differs from Traditional Treatments",
+      content:
+        "Conventional autism therapies focus on teaching practical skills such as communication, behavior management, and daily living. Stem cell therapy has a different goal. Instead of teaching new skills directly, it aims to support the body's natural repair mechanisms and create healthier biological conditions that may allow children to respond more effectively to speech, occupational, and behavioral therapy."
+    },
+
+    {
+      title: "Stem Cell Therapy Is Not a Cure",
+      content:
+        "Stem cell therapy is not considered a cure for Autism Spectrum Disorder. Instead, it is studied as a regenerative treatment that may support healthy nervous system function, reduce inflammation, and improve biological processes involved in brain development. Individual results vary, and continued participation in standard therapies remains essential."
+    },
+
+    {
+      title: "How Stem Cell Therapy May Help",
+      content:
+        "Most studies focus on mesenchymal stromal cells (MSCs), adult stem cells known for their anti-inflammatory and regenerative properties. These cells may regulate immune responses, reduce inflammation, improve communication between cells through signaling molecules and exosomes, and release growth factors that support healthy blood circulation and tissue repair. These combined effects may contribute to improvements in neurological function."
+    },
+
+    {
+      title: "Expected Improvements After Treatment",
+      content:
+        "Every child responds differently. Some families report noticeable improvements within six to twelve weeks, while others observe gradual progress over three to six months. Improvements may continue for up to one year following treatment. Parents are encouraged to monitor gradual positive changes instead of expecting immediate results."
+    },
+
+    {
+      title: "Who May Be Eligible?",
+      content:
+        "Eligibility is determined through a comprehensive medical evaluation. Doctors review the child's age, weight, medical history, autism severity, medications, associated health conditions, and overall physical health before recommending treatment. Most clinics commonly evaluate children between three and ten years of age, although older children and adults may also qualify."
+    },
+
+    {
+      title: "Medical Evaluation Before Treatment",
+      content:
+        "Before treatment, physicians assess medical records, developmental history, laboratory results, medications, and any co-existing conditions such as gastrointestinal disorders, sleep disturbances, immune dysfunction, or seizure history. Additional testing may be recommended to ensure treatment safety and determine whether stem cell therapy is appropriate."
+    }
+  ],
+
+  improvementAreas: [
+    {
+      area: "Sleep",
+      result: "Improved sleep quality, easier bedtime, and fewer nighttime awakenings."
+    },
+    {
+      area: "Attention",
+      result: "Better concentration and ability to follow instructions."
+    },
+    {
+      area: "Communication",
+      result: "Improved eye contact, speech, gestures, and social engagement."
+    },
+    {
+      area: "Sensory Processing",
+      result: "Reduced sensitivity to sound, touch, textures, and environmental changes."
+    },
+    {
+      area: "Behavior",
+      result: "Fewer emotional outbursts and improved behavioral regulation."
+    },
+    {
+      area: "Digestive Health",
+      result: "Improved appetite, bowel function, and reduced digestive discomfort."
+    },
+    {
+      area: "Therapy Participation",
+      result: "Greater engagement during speech, occupational, behavioral, and educational therapy sessions."
+    }
+  ],
+
+  eligibility: [
+    {
+      factor: "Age",
+      details: "Most commonly evaluated between 3 and 10 years of age."
+    },
+    {
+      factor: "Weight",
+      details: "Generally at least 15 kg (33 lbs)."
+    },
+    {
+      factor: "Autism Severity",
+      details: "Children with mild, moderate, or severe ASD may all be considered individually."
+    },
+    {
+      factor: "Associated Conditions",
+      details: "Sleep disorders, digestive problems, immune conditions, inflammation, and seizure history are reviewed."
+    },
+    {
+      factor: "Mental Health",
+      details: "Doctors assess psychiatric history to determine treatment suitability."
+    }
+  ]
+},
+// autism end
+
   {
     slug: "cerebral-palsy",
     name: "Cerebral Palsy",
