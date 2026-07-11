@@ -12,7 +12,7 @@ import { SiteFooter } from "@/components/site/SiteFooter";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Luminara — Stem Cell Therapy for Regenerative Medicine" },
+      { title: "Exostem — Stem Cell Therapy for Regenerative Medicine" },
       {
         name: "description",
         content:
