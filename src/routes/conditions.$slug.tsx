@@ -102,6 +102,75 @@ function ConditionDetail() {
         </div>
       </section>
 
+      {condition.sections && (
+  <section className="py-20 bg-surface">
+    <div className="max-w-4xl mx-auto px-6 space-y-12">
+      {condition.sections.map((section: any) => (
+        <div key={section.title}>
+          <h2 className="text-3xl font-heading font-bold text-brand-dark mb-4">
+            {section.title}
+          </h2>
+          <p className="text-lg text-slate-600 leading-relaxed whitespace-pre-line">
+            {section.content}
+          </p>
+        </div>
+      ))}
+    </div>
+  </section>
+)}
+
+{condition.improvementAreas && (
+  <section className="py-20 bg-white">
+    <div className="max-w-5xl mx-auto px-6">
+      <h2 className="text-3xl font-heading font-bold mb-8">
+        Possible Improvements
+      </h2>
+
+      <div className="overflow-x-auto">
+        <table className="w-full border border-gray-200">
+          <thead>
+            <tr className="bg-gray-50">
+              <th className="text-left p-4">Area</th>
+              <th className="text-left p-4">Possible Changes</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            {condition.improvementAreas.map((item: any) => (
+              <tr key={item.area} className="border-t">
+                <td className="p-4 font-semibold">{item.area}</td>
+                <td className="p-4">{item.result}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+)}
+
+{condition.eligibility && (
+  <section className="py-20 bg-surface">
+    <div className="max-w-5xl mx-auto px-6">
+      <h2 className="text-3xl font-heading font-bold mb-8">
+        Patient Eligibility
+      </h2>
+
+      <div className="space-y-6">
+        {condition.eligibility.map((item: any) => (
+          <div
+            key={item.factor}
+            className="border rounded-xl p-6 bg-white"
+          >
+            <h3 className="font-bold text-xl mb-2">{item.factor}</h3>
+            <p className="text-slate-600">{item.details}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+)}
+
       {related.length > 0 && (
         <section className="py-20 bg-surface">
           <div className="max-w-7xl mx-auto px-6">
