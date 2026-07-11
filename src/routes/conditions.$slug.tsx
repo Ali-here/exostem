@@ -79,7 +79,7 @@ function ConditionDetail() {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
+      {/* <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-3 gap-12">
           <div className="lg:col-span-2">
             <p className="text-xs font-bold uppercase tracking-widest text-brand mb-3">Overview</p>
@@ -100,76 +100,156 @@ function ConditionDetail() {
             </ul>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      {condition.sections && (
-  <section className="py-20 bg-surface">
-    <div className="max-w-4xl mx-auto px-6 space-y-12">
-      {condition.sections.map((section: any) => (
-        <div key={section.title}>
-          <h2 className="text-3xl font-heading font-bold text-brand-dark mb-4">
+    <section className="py-20 bg-white">
+  <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-3 gap-12">
+
+    {/* Left Side - Article */}
+    <div className="lg:col-span-2">
+
+      <p className="text-xs font-bold uppercase tracking-widest text-brand mb-3">
+        Overview
+      </p>
+
+      <h2 className="text-3xl font-heading font-bold text-brand-dark mb-6">
+        How the therapy works.
+      </h2>
+
+      <p className="text-slate-600 leading-relaxed text-lg mb-12 whitespace-pre-line">
+        {condition.overview}
+      </p>
+
+      {/* Additional Sections */}
+      {condition.sections?.map((section: any, index: number) => (
+        <div key={index} className="mb-14">
+
+          <h2 className="text-3xl font-heading font-bold text-brand-dark mb-5">
             {section.title}
           </h2>
-          <p className="text-lg text-slate-600 leading-relaxed whitespace-pre-line">
+
+          <p className="text-slate-600 text-lg leading-8 whitespace-pre-line">
             {section.content}
           </p>
+
         </div>
       ))}
-    </div>
-  </section>
-)}
 
-{condition.improvementAreas && (
-  <section className="py-20 bg-white">
-    <div className="max-w-5xl mx-auto px-6">
-      <h2 className="text-3xl font-heading font-bold mb-8">
-        Possible Improvements
-      </h2>
+      {/* Improvement Areas */}
+      {condition.improvementAreas && (
+        <div className="mt-16">
 
-      <div className="overflow-x-auto">
-        <table className="w-full border border-gray-200">
-          <thead>
-            <tr className="bg-gray-50">
-              <th className="text-left p-4">Area</th>
-              <th className="text-left p-4">Possible Changes</th>
-            </tr>
-          </thead>
+          <h2 className="text-3xl font-heading font-bold text-brand-dark mb-6">
+            Possible Improvements After Treatment
+          </h2>
 
-          <tbody>
-            {condition.improvementAreas.map((item: any) => (
-              <tr key={item.area} className="border-t">
-                <td className="p-4 font-semibold">{item.area}</td>
-                <td className="p-4">{item.result}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
-)}
+          <div className="overflow-hidden rounded-2xl border border-black/10">
 
-{condition.eligibility && (
-  <section className="py-20 bg-surface">
-    <div className="max-w-5xl mx-auto px-6">
-      <h2 className="text-3xl font-heading font-bold mb-8">
-        Patient Eligibility
-      </h2>
+            <table className="w-full">
 
-      <div className="space-y-6">
-        {condition.eligibility.map((item: any) => (
-          <div
-            key={item.factor}
-            className="border rounded-xl p-6 bg-white"
-          >
-            <h3 className="font-bold text-xl mb-2">{item.factor}</h3>
-            <p className="text-slate-600">{item.details}</p>
+              <thead className="bg-surface">
+                <tr>
+                  <th className="text-left p-5 font-bold">Area</th>
+                  <th className="text-left p-5 font-bold">Possible Changes</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                {condition.improvementAreas.map((item: any, index: number) => (
+                  <tr key={index} className="border-t border-black/10">
+
+                    <td className="p-5 font-semibold text-brand-dark w-1/3">
+                      {item.area}
+                    </td>
+
+                    <td className="p-5 text-slate-600 leading-relaxed">
+                      {item.result}
+                    </td>
+
+                  </tr>
+                ))}
+              </tbody>
+
+            </table>
+
           </div>
-        ))}
-      </div>
+
+        </div>
+      )}
+
+      {/* Eligibility */}
+      {condition.eligibility && (
+        <div className="mt-16">
+
+          <h2 className="text-3xl font-heading font-bold text-brand-dark mb-6">
+            Patient Eligibility
+          </h2>
+
+          <div className="overflow-hidden rounded-2xl border border-black/10">
+
+            <table className="w-full">
+
+              <thead className="bg-surface">
+                <tr>
+                  <th className="text-left p-5 font-bold">Factor</th>
+                  <th className="text-left p-5 font-bold">Medical Assessment</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                {condition.eligibility.map((item: any, index: number) => (
+                  <tr key={index} className="border-t border-black/10">
+
+                    <td className="p-5 font-semibold text-brand-dark w-1/3">
+                      {item.factor}
+                    </td>
+
+                    <td className="p-5 text-slate-600 leading-relaxed">
+                      {item.details}
+                    </td>
+
+                  </tr>
+                ))}
+              </tbody>
+
+            </table>
+
+          </div>
+
+        </div>
+      )}
+
     </div>
-  </section>
-)}
+
+    {/* Right Side - Benefits */}
+    <div>
+
+      <p className="text-xs font-bold uppercase tracking-widest text-brand mb-3">
+        Expected Benefits
+      </p>
+
+      <ul className="space-y-3 sticky top-24">
+
+        {condition.benefits.map((b: string) => (
+          <li key={b} className="flex items-start gap-3">
+
+            <span className="mt-0.5 shrink-0 size-6 rounded-full bg-brand/10 text-brand flex items-center justify-center">
+              <Check className="size-3.5" />
+            </span>
+
+            <span className="text-sm text-brand-dark/80 leading-relaxed">
+              {b}
+            </span>
+
+          </li>
+        ))}
+
+      </ul>
+
+    </div>
+
+  </div>
+</section>
 
       {related.length > 0 && (
         <section className="py-20 bg-surface">

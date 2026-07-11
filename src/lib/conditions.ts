@@ -52,7 +52,7 @@ export const conditions: Condition[] = [
   {
   slug: "autism",
 
-  name: "Stem Cell Therapy for Children with Autism: Benefits, Safety, Cost, and Expected Outcomes",
+  name: "Autism Spectrum Disorder (ASD)",
 
   category: "pediatric-neurology",
 
