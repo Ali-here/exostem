@@ -5,7 +5,7 @@ import heroCells from "@/assets/hero-cells.jpg";
 import condNeurology from "@/assets/cond-neurology.jpg";
 import condOrtho from "@/assets/cond-ortho.jpg";
 import condAging from "@/assets/cond-aging.jpg";
-import patientPortrait from "@/assets/patient-portrait.jpg";
+// import patientPortrait from "@/assets/patient-portrait.jpg";
 import { SiteNav } from "@/components/site/SiteNav";
 import { SiteFooter } from "@/components/site/SiteFooter";
 
