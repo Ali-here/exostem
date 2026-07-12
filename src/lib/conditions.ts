@@ -5,7 +5,13 @@ export interface Condition {
   summary: string;
   overview: string;
   benefits: string[];
+  readTime?: string;
+  updatedAt?: string;
+  sections?: { title: string; content: string }[];
+  improvementAreas?: { area: string; result: string }[];
+  eligibility?: { factor: string; details: string }[];
 }
+
 
 export const conditionCategories = [
   {
