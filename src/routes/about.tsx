@@ -1,8 +1,13 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, ShieldCheck, Microscope, Users, Globe2 } from "lucide-react";
+import { ArrowRight, ShieldCheck, Microscope, Users, Globe2, Linkedin } from "lucide-react";
 import { SiteNav } from "@/components/site/SiteNav";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { PageHero } from "@/components/site/PageHero";
+import teamDirector from "@/assets/team-director.jpg";
+import teamBiologist from "@/assets/team-biologist.jpg";
+import teamCare from "@/assets/team-care.jpg";
+import teamNeurologist from "@/assets/team-neurologist.jpg";
+
 
 export const Route = createFileRoute("/about")({
   head: () => ({
