@@ -5,7 +5,7 @@ import { SiteFooter } from "@/components/site/SiteFooter";
 import { PageHero } from "@/components/site/PageHero";
 import teamDirector from "@/assets/team-director.jpg";
 import teamBiologist from "@/assets/team-biologist.jpg";
-import teamCare from "@/assets/team-care.jpg";
+import teamCare from "@/assets/team-care.jpeg";
 import teamNeurologist from "@/assets/team-neurologist.jpg";
 
 
@@ -37,26 +37,26 @@ const stats = [
 
 const team = [
   {
-    name: "Dr. Elena Vasquez",
-    role: "Medical Director",
+    name: "Mirwais Khan",
+    role: "CEO",
     bio: "Board-certified in regenerative medicine with 18 years in cellular therapy and clinical translation.",
     image: teamDirector,
   },
   {
-    name: "Dr. James Okonkwo",
-    role: "Lead Cell Biologist",
+    name: "Dr. Zia Ur Rehman",
+    role: "Director",
     bio: "PhD in stem-cell biology; oversees in-house expansion, characterization and quality assurance.",
     image: teamBiologist,
   },
   {
-    name: "Maria Santos",
-    role: "Head of Patient Care",
+    name: "Dr. Noman Fazal",
+    role: "Director & Scientific Consultant",
     bio: "Coordinates concierge programs and follow-up for patients across 40+ countries.",
     image: teamCare,
   },
   {
-    name: "Dr. Michael Harrington",
-    role: "Neurology Advisor",
+    name: "Aakif Khan",
+    role: "Secretary",
     bio: "Specialist in neurodegenerative conditions and pediatric neurology protocols.",
     image: teamNeurologist,
   },
