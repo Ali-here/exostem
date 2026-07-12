@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { useState } from "react";
+import logo from "@/assets/logo.png";
 
 const conditionGroups = [
   {
@@ -67,7 +68,11 @@ export function SiteNav() {
     <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-brand/10">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         <Link to="/" className="text-2xl font-bold tracking-tight font-heading text-brand">
-          Exostem
+          <img
+    src={logo}
+    alt="Exostem Logo"
+    className="h-12 w-auto"
+  />
         </Link>
 
         <div className="hidden lg:flex items-center gap-7 text-sm font-medium">
