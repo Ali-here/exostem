@@ -3,7 +3,7 @@ import { ArrowRight, ShieldCheck, Microscope, Users, Globe2, Linkedin } from "lu
 import { SiteNav } from "@/components/site/SiteNav";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { PageHero } from "@/components/site/PageHero";
-import teamDirector from "@/assets/team-director.jpg";
+import teamDirector from "@/assets/team-director.jpeg";
 import teamBiologist from "@/assets/team-biologist.jpg";
 import teamCare from "@/assets/team-care.jpeg";
 import teamNeurologist from "@/assets/team-neurologist.jpeg";
