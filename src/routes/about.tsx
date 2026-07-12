@@ -35,8 +35,36 @@ const stats = [
   { v: "12", l: "Years of practice" },
 ];
 
+const team = [
+  {
+    name: "Dr. Elena Vasquez",
+    role: "Medical Director",
+    bio: "Board-certified in regenerative medicine with 18 years in cellular therapy and clinical translation.",
+    image: teamDirector,
+  },
+  {
+    name: "Dr. James Okonkwo",
+    role: "Lead Cell Biologist",
+    bio: "PhD in stem-cell biology; oversees in-house expansion, characterization and quality assurance.",
+    image: teamBiologist,
+  },
+  {
+    name: "Maria Santos",
+    role: "Head of Patient Care",
+    bio: "Coordinates concierge programs and follow-up for patients across 40+ countries.",
+    image: teamCare,
+  },
+  {
+    name: "Dr. Michael Harrington",
+    role: "Neurology Advisor",
+    bio: "Specialist in neurodegenerative conditions and pediatric neurology protocols.",
+    image: teamNeurologist,
+  },
+];
+
 function About() {
   return (
+
     <div className="min-h-screen bg-surface font-sans text-brand-dark/90">
       <SiteNav />
       <PageHero
