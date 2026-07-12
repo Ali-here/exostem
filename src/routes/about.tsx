@@ -91,7 +91,10 @@ function About() {
         </div>
       </section>
 
+      <TeamSection />
+
       <section className="py-24 bg-white">
+
         <div className="max-w-4xl mx-auto px-6 text-center">
           <p className="text-xs font-bold uppercase tracking-widest text-brand mb-3">Ready When You Are</p>
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-brand-dark mb-6">
