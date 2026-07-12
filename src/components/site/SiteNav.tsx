@@ -129,9 +129,9 @@ export function SiteNav() {
           <Link to="/faq" className="hover:text-brand transition-colors" activeProps={{ className: "text-brand" }}>
             FAQ
           </Link>
-          <Link to="/testimonials" className="hover:text-brand transition-colors" activeProps={{ className: "text-brand" }}>
+          {/* <Link to="/testimonials" className="hover:text-brand transition-colors" activeProps={{ className: "text-brand" }}>
             Testimonials
-          </Link>
+          </Link> */}
         </div>
 
         <div className="flex items-center gap-3">
