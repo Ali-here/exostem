@@ -1,8 +1,13 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, ShieldCheck, Microscope, Users, Globe2 } from "lucide-react";
+import { ArrowRight, ShieldCheck, Microscope, Users, Globe2, Linkedin } from "lucide-react";
 import { SiteNav } from "@/components/site/SiteNav";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { PageHero } from "@/components/site/PageHero";
+import teamDirector from "@/assets/team-director.jpg";
+import teamBiologist from "@/assets/team-biologist.jpg";
+import teamCare from "@/assets/team-care.jpg";
+import teamNeurologist from "@/assets/team-neurologist.jpg";
+
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -30,8 +35,36 @@ const stats = [
   { v: "12", l: "Years of practice" },
 ];
 
+const team = [
+  {
+    name: "Dr. Elena Vasquez",
+    role: "Medical Director",
+    bio: "Board-certified in regenerative medicine with 18 years in cellular therapy and clinical translation.",
+    image: teamDirector,
+  },
+  {
+    name: "Dr. James Okonkwo",
+    role: "Lead Cell Biologist",
+    bio: "PhD in stem-cell biology; oversees in-house expansion, characterization and quality assurance.",
+    image: teamBiologist,
+  },
+  {
+    name: "Maria Santos",
+    role: "Head of Patient Care",
+    bio: "Coordinates concierge programs and follow-up for patients across 40+ countries.",
+    image: teamCare,
+  },
+  {
+    name: "Dr. Michael Harrington",
+    role: "Neurology Advisor",
+    bio: "Specialist in neurodegenerative conditions and pediatric neurology protocols.",
+    image: teamNeurologist,
+  },
+];
+
 function About() {
   return (
+
     <div className="min-h-screen bg-surface font-sans text-brand-dark/90">
       <SiteNav />
       <PageHero
@@ -86,7 +119,10 @@ function About() {
         </div>
       </section>
 
+      <TeamSection />
+
       <section className="py-24 bg-white">
+
         <div className="max-w-4xl mx-auto px-6 text-center">
           <p className="text-xs font-bold uppercase tracking-widest text-brand mb-3">Ready When You Are</p>
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-brand-dark mb-6">
@@ -103,3 +139,50 @@ function About() {
     </div>
   );
 }
+
+function TeamSection() {
+  return (
+    <section className="py-24 bg-white">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="max-w-2xl mb-14">
+          <p className="text-xs font-bold uppercase tracking-widest text-brand mb-3">Our Team</p>
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-brand-dark mb-5">
+            The people behind the protocol.
+          </h2>
+          <p className="text-slate-600 leading-relaxed">
+            A multidisciplinary team of physicians, scientists and care coordinators — every specialist you meet is part of the same clinic.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {team.map((member) => (
+            <div key={member.name} className="group rounded-2xl bg-surface border border-black/5 overflow-hidden">
+              <div className="aspect-[4/5] overflow-hidden bg-slate-100">
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  width={600}
+                  height={720}
+                  loading="lazy"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="font-heading font-bold text-lg text-brand-dark mb-1">{member.name}</h3>
+                <p className="text-xs font-bold uppercase tracking-widest text-brand mb-3">{member.role}</p>
+                <p className="text-sm text-slate-500 leading-relaxed mb-4">{member.bio}</p>
+                <a
+                  href="#"
+                  className="inline-flex items-center gap-1.5 text-xs font-bold text-brand-dark hover:text-brand transition-colors"
+                  aria-label={`${member.name} LinkedIn profile`}
+                >
+                  <Linkedin className="size-4" /> Connect
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
