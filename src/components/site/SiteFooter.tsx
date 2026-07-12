@@ -30,7 +30,7 @@ export function SiteFooter() {
           <div className="text-xs font-bold uppercase tracking-widest text-white/40 mb-4">Care</div>
           <ul className="space-y-2 text-sm">
             <li><Link to="/faq" className="text-white/80 hover:text-brand transition-colors">FAQ</Link></li>
-            <li><Link to="/testimonials" className="text-white/80 hover:text-brand transition-colors">Testimonials</Link></li>
+            {/* <li><Link to="/testimonials" className="text-white/80 hover:text-brand transition-colors">Testimonials</Link></li> */}
             <li><Link to="/contact" className="text-white/80 hover:text-brand transition-colors">Contact</Link></li>
           </ul>
         </div>
