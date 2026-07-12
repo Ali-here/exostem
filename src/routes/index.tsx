@@ -354,9 +354,9 @@ function Contact() {
                 Our medical concierge team responds within 4 hours. All communications are encrypted and confidential.
               </p>
               <div className="space-y-3 text-sm text-white/80">
-                <div>Main Laboratory · Zurich, Switzerland</div>
-                <div>Medical Inquiries · +41 (0) 44 200 1200</div>
-                <div>Email · care@Exostem.com</div>
+                <div>Main Laboratory · 3rd Floor, Kulsum International Hospital 2020 Kulsum Plaza, Blue Area, Islamabad</div>
+                <div>Medical Inquiries · +92 316 4572440</div>
+                <div>Email · exostempk@gmail.com</div>
               </div>
             </div>
             <form onSubmit={(e) => e.preventDefault()} className="flex flex-col gap-3 bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10">
