@@ -39,25 +39,25 @@ const team = [
   {
     name: "Mirwais Khan",
     role: "CEO",
-    bio: "Board-certified in regenerative medicine with 18 years in cellular therapy and clinical translation.",
+    bio: "Expert In Regenerative Medicine.",
     image: teamDirector,
   },
   {
     name: "Dr. Zia Ur Rehman",
     role: "Director",
-    bio: "PhD in stem-cell biology; oversees in-house expansion, characterization and quality assurance.",
+    bio: "PhD in Molecular Biology. Expert in Exosome.",
     image: teamBiologist,
   },
   {
     name: "Dr. Noman Fazal",
     role: "Director & Scientific Consultant",
-    bio: "Coordinates concierge programs and follow-up for patients across 40+ countries.",
+    bio: "PhD in Stem Cells. ",
     image: teamCare,
   },
   {
     name: "Aakif Khan",
     role: "Secretary",
-    bio: "Specialist in neurodegenerative conditions and pediatric neurology protocols.",
+    bio: "MPhil in Stem Cells.",
     image: teamNeurologist,
   },
 ];
