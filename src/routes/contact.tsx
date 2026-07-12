@@ -17,9 +17,9 @@ export const Route = createFileRoute("/contact")({
 });
 
 const details = [
-  { Icon: MapPin, label: "Main Laboratory", value: "Zurich, Switzerland" },
-  { Icon: Phone, label: "Medical Inquiries", value: "+41 (0) 44 200 1200" },
-  { Icon: Mail, label: "Email", value: "care@Exostemmed.com" },
+  { Icon: MapPin, label: "Main Laboratory", value: "3rd Floor, Kulsum International Hospital 2020 Kulsum Plaza, Blue Area, Islamabad" },
+  { Icon: Phone, label: "Medical Inquiries", value: "+92 316 4572440" },
+  { Icon: Mail, label: "Email", value: "exostempk@gmail.com" },
   { Icon: Clock, label: "Response Time", value: "Within 4 hours" },
 ];
 
