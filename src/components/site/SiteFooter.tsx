@@ -1,11 +1,17 @@
 import { Link } from "@tanstack/react-router";
+import logoWhite from "@/assets/logo-white.png";
 
 export function SiteFooter() {
   return (
     <footer className="bg-brand-dark text-white pt-16 pb-10">
       <div className="max-w-7xl mx-auto px-6 grid gap-12 lg:grid-cols-4">
         <div className="lg:col-span-2 max-w-sm">
-          <div className="text-2xl font-heading font-bold text-brand mb-4 uppercase">Exostem</div>
+          <div className="text-2xl font-heading font-bold text-brand mb-4 uppercase">
+            <img
+    src={logoWhite}
+    alt="Exostem Logo"
+    className="h-12 w-auto"
+  /></div>
           <p className="text-white/60 text-sm leading-relaxed">
             Advanced regenerative medicine — certified specialists, modern laboratory, personalized
             protocols for patients from around the world.
