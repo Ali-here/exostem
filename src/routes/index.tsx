@@ -5,7 +5,7 @@ import heroCells from "@/assets/hero-cells.jpg";
 import condNeurology from "@/assets/cond-neurology.jpg";
 import condOrtho from "@/assets/cond-ortho.jpg";
 import condAging from "@/assets/cond-aging.jpg";
-import patientPortrait from "@/assets/patient-portrait.jpg";
+// import patientPortrait from "@/assets/patient-portrait.jpg";
 import { SiteNav } from "@/components/site/SiteNav";
 import { SiteFooter } from "@/components/site/SiteFooter";
 
@@ -241,34 +241,34 @@ function Journey() {
   );
 }
 
-function SuccessStory() {
-  return (
-    <section id="stories" className="py-24 bg-surface">
-      <div className="max-w-7xl mx-auto px-6">
-        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-3">Success Stories</p>
-        <h2 className="text-4xl font-heading font-bold text-brand-dark mb-12 max-w-2xl">Real patients, measurable outcomes.</h2>
-        <div className="bg-white rounded-[3rem] overflow-hidden border border-black/5 flex flex-col lg:flex-row">
-          <div className="lg:w-1/2">
-            <img src={patientPortrait} alt="Patient Michael Henderson" loading="lazy" width={900} height={900} className="w-full h-full aspect-square object-cover" />
-          </div>
-          <div className="lg:w-1/2 p-12 lg:p-20 flex flex-col justify-center">
-            <div className="text-brand font-heading text-6xl leading-none mb-6">&ldquo;</div>
-            <p className="text-2xl font-medium mb-8 leading-relaxed text-brand-dark">
-              After years of struggling with chronic arthritis, the regenerative therapy at Exostem changed everything. I'm back to running morning miles without pain.
-            </p>
-            <div>
-              <div className="font-bold text-lg">Michael Henderson</div>
-              <div className="text-slate-500 text-sm">Orthopedic Patient, 2023</div>
-            </div>
-            <Link to="/testimonials" className="mt-8 inline-flex items-center gap-2 text-brand font-bold">
-              Read more stories <ArrowRight className="size-4" />
-            </Link>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
+// function SuccessStory() {
+//   return (
+//     <section id="stories" className="py-24 bg-surface">
+//       <div className="max-w-7xl mx-auto px-6">
+//         <p className="text-xs font-bold uppercase tracking-widest text-brand mb-3">Success Stories</p>
+//         <h2 className="text-4xl font-heading font-bold text-brand-dark mb-12 max-w-2xl">Real patients, measurable outcomes.</h2>
+//         <div className="bg-white rounded-[3rem] overflow-hidden border border-black/5 flex flex-col lg:flex-row">
+//           <div className="lg:w-1/2">
+//             <img src={patientPortrait} alt="Patient Michael Henderson" loading="lazy" width={900} height={900} className="w-full h-full aspect-square object-cover" />
+//           </div>
+//           <div className="lg:w-1/2 p-12 lg:p-20 flex flex-col justify-center">
+//             <div className="text-brand font-heading text-6xl leading-none mb-6">&ldquo;</div>
+//             <p className="text-2xl font-medium mb-8 leading-relaxed text-brand-dark">
+//               After years of struggling with chronic arthritis, the regenerative therapy at Exostem changed everything. I'm back to running morning miles without pain.
+//             </p>
+//             <div>
+//               <div className="font-bold text-lg">Michael Henderson</div>
+//               <div className="text-slate-500 text-sm">Orthopedic Patient, 2023</div>
+//             </div>
+//             <Link to="/testimonials" className="mt-8 inline-flex items-center gap-2 text-brand font-bold">
+//               Read more stories <ArrowRight className="size-4" />
+//             </Link>
+//           </div>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
 
 function FAQ() {
   const [open, setOpen] = useState<number | null>(0);
